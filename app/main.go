@@ -1,22 +1,22 @@
 package main
 
 import (
-	"errors"
+//	"errors"
 	"fmt"
 	"os"
 	"os/signal"
 	"sync"
 
 	"github.com/roman220220/astmysqlloader/app/internal/db"
-	"github.com/roman220220/astmysqlloader/app/internal/config"
+//	"github.com/roman220220/astmysqlloader/app/internal/config"
 
-	"net/http"
-	"regexp"
+//	"net/http"
+//	"regexp"
 
-	log "astmysqlloader/app/internal/logger"
+	log "github.com/roman220220/astmysqlloader/app/internal/logger"
 )
 
-type DialerParams struct {
+type Params struct {
         Action        string
         ProjectId     string
         Sql           db.DB
@@ -33,9 +33,6 @@ func main() {
 		<-sigchan
 		fmt.Println("Program killed !")
 		a.Sql.DBClose()
-		close(a.AgentsChannel)
-		close(a.Channel)
-		close(a.Ch)
 		// do last actions and wait for all write operations to end
 		os.Exit(0)
 	}()

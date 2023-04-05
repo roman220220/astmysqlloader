@@ -1,15 +1,15 @@
 package db
 
 import (
-	"database/sql"
+//	"database/sql"
 	"fmt"
 	"github.com/roman220220/astmysqlloader/app/internal/config"
 	log "github.com/roman220220/astmysqlloader/app/internal/logger"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/jmoiron/sqlx"
-	"strconv"
-	"strings"
+//	"strconv"
+//	"strings"
 	"time"
 )
 
@@ -60,19 +60,19 @@ type Contacts struct {
 	Qualify          string `db:"qualify"`
 }
 
-func (a *DB) InsertContacts(dialCase map[string]interface{}) {
+//func (a *DB) InsertContacts(dialCase map[string]interface{}) {
 
-	sqlStatement := "INSERT INTO " + a.Scheme + ".contacts (aor, contact, hash, qualify) VALUES" +
-		"('" + Contacts["aor"].(string) + "','" +
-		"" + Contacts["contact"].(string) + "','" +
-		"" + Contacts["hash"].(string) + "','" +
-		"" + Contacts["avail"].(string) + "','" +
-		"" + Contacts["qualify"].(string) + "')"
-	_, err := a.DBConn.Exec(sqlStatement)
-	if err != nil {
-		log.MakeLog(1, err)
-	}
-	log.MakeLog(3, sqlStatement)
-}
+//	sqlStatement := "INSERT INTO " + a.Scheme + ".contacts (aor, contact, hash, qualify) VALUES" +
+//		"('" + Contacts["aor"].(string) + "','" +
+//		"" + Contacts["contact"].(string) + "','" +
+//		"" + Contacts["hash"].(string) + "','" +
+//		"" + Contacts["avail"].(string) + "','" +
+//		"" + Contacts["qualify"].(string) + "')"
+//	_, err := a.DBConn.Exec(sqlStatement)
+//	if err != nil {
+//		log.MakeLog(1, err)
+//	}
+//	log.MakeLog(3, sqlStatement)
+//}
 
 
