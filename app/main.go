@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"sync"
 
-	"astmysqlloader/app/internal/db"
-	"astmysqlloader/app/internal/config"
+	"github.com/roman220220/astmysqlloader/app/internal/db"
+	"github.com/roman220220/astmysqlloader/app/internal/config"
 
 	"net/http"
 	"regexp"
