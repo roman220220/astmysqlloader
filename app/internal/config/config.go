@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"log"
+	"github.com/roman220220/astmysqlloader/app/internal/logger"
 )
 
 type DBConfig struct {

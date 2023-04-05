@@ -3,8 +3,8 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	"astmysqlloader/app/internal/config"
-	log "astmysqlloader/app/internal/logger"
+	"github.com/roman220220/astmysqlloader/app/internal/config"
+	log "github.com/roman220220/astmysqlloader/app/internal/logger"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/jmoiron/sqlx"
