@@ -1,0 +1,14 @@
+
+{
+  "Driver":"mysql",
+  "DB_Server":"127.0.0.1",
+  "Port": 3306,
+  "DB_Name":"asterisk",
+  "Scheme":"asterisk",
+  "Username":"asterisk",
+  "Password":"",
+  "Conn_Max_Lifetime": 5,
+  "Max_Open_Conns": 1000,
+  "Max_Idle_Conns": 5
+}
+

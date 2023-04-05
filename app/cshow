@@ -1,0 +1,6 @@
+      Contact:  <Aor/ContactUri..........................> <Hash....> <Status> <RTT(ms)..>
+      Contact:  11004/sip:sg91pu6o@176.74.220.15:59943;tra 29cf83cb1c Avail       448.498
+      Contact:  11011/sip:qmc8v4j0@176.74.220.15:51008;tra c540a8a98f Avail        44.850
+      Contact:  provider_1/sip:sip.provider.com            996a60d273 Avail       137.493
+      Contact:  provider_in_1/sip:did.provider.com         b1c00deaca Avail       142.701
+      Contact:  provideralt_1/sip:1.1.1.1                  3ee23dec9c Avail       131.778
